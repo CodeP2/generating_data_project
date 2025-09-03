@@ -8,6 +8,10 @@ contents = path.read_text(encoding="UTF-8")
 all_eq_data = json.loads(contents)
 
 # Create a more readable version of the data file.
-path = Path('eq_data/readable_eq_data.geojson')
-readable_contents = json.dumps(all_eq_data, indent=4)
-path.write_text(readable_contents)
+# path = Path('eq_data/readable_eq_data.geojson')
+# readable_contents = json.dumps(all_eq_data, indent=4)
+# path.write_text(readable_contents)
+
+# Examine all earthquakes in the dataset.
+all_eq_dict= all_eq_data['features']
+print(len(all_eq_dict))
