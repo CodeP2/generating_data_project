@@ -17,7 +17,7 @@ all_eq_dict= all_eq_data['features']
 # print(len(all_eq_dict))
 
 mags = []
-for eq_dict in all_eq_dicts:
+for eq_dict in all_eq_dict:
     mag = eq_dict['properties']['mag']
     mags.append(mag)
 
