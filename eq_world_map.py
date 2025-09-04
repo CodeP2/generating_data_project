@@ -10,5 +10,6 @@ fig = px.scatter_geo(
     color=eq_explore_data.mags,
     color_continuous_scale='Viridis',
     labels={'color':'Magnitude'},
-    projection='natural earth')
+    projection='natural earth',
+    hover_name=eq_explore_data.eq_titles)
 fig.show()
